@@ -6,11 +6,10 @@
 <h1 align="center">Owble</h1>
 
 <p align="center">
-  Ein moderner Windows-Client für <a href="https://www.mumble.info">Mumble</a>-Server – schlank, dunkel, mit Stil.
+  Ein moderner Windows-Client für <a href="https://www.mumble.info">Mumble</a>-Server.
 </p>
 
 <p align="center">
-  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest"><img src="https://img.shields.io/github/v/release/AntaresPURE/Owble-Releases?label=Version" alt="Version" /></a>
   <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FAntaresPURE%2FOwble-Releases%2Fbadges%2Ftests.json" alt="Tests" />
 </p>
 
@@ -22,22 +21,11 @@
 
 ## Installation
 
-1. **[Owble-win-x64.zip herunterladen](https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-win-x64.zip)** – immer die neueste Version
-2. Entpacken und `Owble.exe` im Ordner `Owble-<Version>` starten – keine Installation, .NET ist enthalten
+ZIP entpacken und `Owble.exe` starten – .NET ist enthalten, Voraussetzung ist Windows 10 oder 11 (64 Bit). Beim ersten Start bietet Owble an, sich für dein Windows-Konto zu installieren (ohne Adminrechte); was eingerichtet wird, wählst du selbst: Startmenü, Desktop, App-Liste, Autostart, `mumble://`-Links. Nichts ausgewählt heißt portabel.
 
-Voraussetzung: Windows 10 oder 11 (64 Bit).
+Meldet Windows beim ersten Start „Der Computer wurde durch Windows geschützt“ (die Datei ist nicht signiert): *Weitere Informationen → Trotzdem ausführen*.
 
-Beim ersten Start kann Windows „Der Computer wurde durch Windows geschützt“ melden, weil die Datei nicht signiert ist: *Weitere Informationen → Trotzdem ausführen*.
-
-**Update:** neue Version herunterladen und entpacken. Einstellungen, Server und Zertifikat liegen unter `%AppData%\Owble` und bleiben erhalten. Welche Version du hast, steht unten links in den Einstellungen.
-
-Alle Versionen: [Releases](https://github.com/AntaresPURE/Owble-Releases/releases).
-
-## Erste Schritte
-
-1. **Server hinzufügen** – auf der Startseite Adresse, Port und Benutzernamen eintragen
-2. **Verbinden** – Doppelklick auf die Server-Kachel; `mumble://`-Links öffnet Owble ebenfalls
-3. **Sprechen einrichten** – in den Einstellungen (`Strg` + `,`) Mikrofon, Sendemodus und ggf. die Push-to-Talk-Taste wählen
+**Update:** Ein installiertes Owble (ab 0.3.0) zeigt neue Versionen oben in der Titelleiste an und aktualisiert sich mit einem Klick. Sonst: neue Version herunterladen, Owble beenden, die neue `Owble.exe` starten und installieren. Einstellungen, Server und Zertifikat bleiben erhalten. **Deinstallieren** (App-Liste von Windows oder Einstellungen) entfernt Owble restlos. Die eigene Version steht unten links in den Einstellungen, alle Versionen unter [Releases](https://github.com/AntaresPURE/Owble-Releases/releases).
 
 ## Lizenz
 
