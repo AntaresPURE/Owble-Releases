@@ -1,0 +1,34 @@
+Owble
+Copyright (c) 2026 Marco Josef Lehmer
+Alle Rechte vorbehalten. / All rights reserved.
+
+DEUTSCH
+
+Owble (dieses Repository, sein Quellcode und die daraus erstellten Programme) ist
+urheberrechtlich geschützt. Ohne vorherige schriftliche Zustimmung des Rechteinhabers
+ist es nicht gestattet, Owble ganz oder teilweise zu vervielfältigen, zu verändern,
+zu verbreiten, öffentlich zugänglich zu machen, zu unterlizenzieren oder zu verkaufen.
+
+Unberührt bleiben die gesetzlich erlaubten Nutzungen sowie – solange das Repository
+öffentlich auf GitHub liegt – das Ansehen und Forken auf GitHub, das die
+Nutzungsbedingungen von GitHub erlauben. Ein Fork berechtigt nicht zu einer Nutzung
+darüber hinaus.
+
+Ausgenommen sind Bestandteile Dritter, die unter ihren eigenen Lizenzen stehen, darunter
+die Protokoll-Definitionen Owble.Protocol/Proto/Mumble.proto und MumbleUDP.proto
+(Auszüge aus Mumble, BSD-3-Clause). Siehe THIRD-PARTY-NOTICES.md.
+
+ENGLISH
+
+Owble (this repository, its source code and the programs built from it) is protected by
+copyright. Without the prior written permission of the copyright holder you may not
+copy, modify, distribute, make publicly available, sublicense or sell Owble, in whole
+or in part.
+
+This does not affect uses permitted by law and – as long as the repository is public on
+GitHub – viewing and forking on GitHub as allowed by GitHub's Terms of Service. A fork
+does not grant any further rights.
+
+Excluded are third-party components, which are subject to their own licenses, including
+the protocol definitions Owble.Protocol/Proto/Mumble.proto and MumbleUDP.proto (excerpts
+from Mumble, BSD-3-Clause). See THIRD-PARTY-NOTICES.md.
