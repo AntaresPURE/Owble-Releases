@@ -15,6 +15,7 @@ reproduced below as their terms require.
 | [RNNoise](https://gitlab.xiph.org/xiph/rnnoise) | noise suppression | BSD-3-Clause |
 | [RNNoise.NET](https://github.com/Yellow-Dog-Man/RNNoise.Net) (YellowDogMan.RRNoise.NET) | packaging of RNNoise | MIT |
 | [Mumble](https://github.com/mumble-voip/mumble) protocol definitions (`Mumble.proto`, `MumbleUDP.proto`, excerpts) | Mumble protocol | BSD-3-Clause |
+| [Microsoft Edge WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) (Microsoft.Web.WebView2) | screen sharing window (uses the WebView2 runtime that comes with Windows) | BSD-3-Clause |
 
 Build tools that do not become part of the program (Grpc.Tools, Microsoft.CodeAnalysis.ResxSourceGenerator,
 test frameworks) are used under their own licenses and are not redistributed.
@@ -63,6 +64,7 @@ Applies to the components marked "BSD-3-Clause" above, with these copyright noti
 - RNNoise: Copyright (c) 2017, Mozilla; Copyright (c) 2007-2017, Jean-Marc Valin;
   Copyright (c) 2005-2017, Xiph.Org Foundation; Copyright (c) 2003-2004, Mark Borgerding
 - Mumble protocol definitions: Copyright (C) The Mumble Developers
+- Microsoft Edge WebView2 SDK: Copyright (C) Microsoft Corporation. All rights reserved.
 
 ```
 Redistribution and use in source and binary forms, with or without
