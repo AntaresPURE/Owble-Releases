@@ -15,7 +15,7 @@ reproduced below as their terms require.
 | [RNNoise](https://gitlab.xiph.org/xiph/rnnoise) | noise suppression | BSD-3-Clause |
 | [RNNoise.NET](https://github.com/Yellow-Dog-Man/RNNoise.Net) (YellowDogMan.RRNoise.NET) | packaging of RNNoise | MIT |
 | [Mumble](https://github.com/mumble-voip/mumble) protocol definitions (`Mumble.proto`, `MumbleUDP.proto`, excerpts) | Mumble protocol | BSD-3-Clause |
-| [Avalonia](https://github.com/AvaloniaUI/Avalonia) (Avalonia, Avalonia.Desktop, Themes.Fluent, Fonts.Inter, ReactiveUI.Avalonia) | cross-platform user interface | MIT |
+| [Avalonia](https://github.com/AvaloniaUI/Avalonia) (Avalonia, Avalonia.Desktop, Themes.Fluent, Fonts.Inter) | cross-platform user interface | MIT |
 | [Inter](https://github.com/rsms/inter) font (Avalonia.Fonts.Inter) | user interface font | SIL Open Font License 1.1 |
 | [SkiaSharp](https://github.com/mono/SkiaSharp) | image decoding, scaling and encoding | MIT |
 | [PortAudio](https://github.com/PortAudio/portaudio) and [PortAudioSharp2](https://github.com/k2-fsa/PortAudioSharp2) | audio input and output on macOS and Linux | MIT |
@@ -33,7 +33,7 @@ Applies to the components marked "MIT" above, with these copyright notices:
 
 - .NET runtime, WPF, Windows Forms, System.Numerics.Tensors: Copyright (c) .NET Foundation and Contributors
 - CommunityToolkit.Mvvm: Copyright (c) .NET Foundation and Contributors
-- Avalonia, ReactiveUI.Avalonia: Copyright (c) AvaloniaUI OÜ and contributors / ReactiveUI Association Incorporated
+- Avalonia: Copyright (c) AvaloniaUI OÜ and contributors
 - SkiaSharp: Copyright (c) 2015-2016 Xamarin, Inc.; (c) 2017-2018 Microsoft Corporation
 - PortAudio: Copyright (c) 1999-2011 Ross Bencina and Phil Burk
 - SharpHook: Copyright (c) Tolik Pylypchuk
