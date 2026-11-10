@@ -2,28 +2,34 @@
 
 Owble is proprietary software (see `LICENSE`). It includes the following third-party
 components, which are distributed under their own licenses. The license texts are
-reproduced below as their terms require.
+reproduced below or, where they are long, as files in the folder `licenses` next to this
+file. Nothing in the license of Owble restricts the rights that these licenses give you
+for the components themselves.
 
 | Component | Used for | License |
 |---|---|---|
 | .NET runtime (included in the self-contained build) | application platform | MIT |
 | [CommunityToolkit.Mvvm](https://github.com/CommunityToolkit/dotnet) | MVVM infrastructure | MIT |
+| Microsoft.Extensions.DependencyInjection.Abstractions, Microsoft.Extensions.Logging.Abstractions, [Microsoft.IO.RecyclableMemoryStream](https://github.com/microsoft/Microsoft.IO.RecyclableMemoryStream), System.Security.Cryptography.ProtectedData (dependencies of Avalonia and the app) | infrastructure, protecting saved secrets on Windows | MIT |
 | [NAudio](https://github.com/naudio/NAudio) (NAudio.Core, NAudio.Wasapi) | mixing; audio input and output on Windows (WASAPI) | MIT |
 | [System.Numerics.Tensors](https://github.com/dotnet/runtime) | dependency of NAudio | MIT |
 | [Concentus](https://github.com/lostromb/concentus) (including the Opus reference library) | Opus voice codec | BSD-style (Opus license) |
 | [Google.Protobuf](https://github.com/protocolbuffers/protobuf) | protocol serialization | BSD-3-Clause |
-| [RNNoise](https://gitlab.xiph.org/xiph/rnnoise) | noise suppression | BSD-3-Clause |
+| [RNNoise](https://gitlab.xiph.org/xiph/rnnoise) | noise suppression (macOS: built from the release 0.2 when packaging, `librnnoise.dylib`) | BSD-3-Clause |
 | [RNNoise.NET](https://github.com/Yellow-Dog-Man/RNNoise.Net) (YellowDogMan.RRNoise.NET) | packaging of RNNoise | MIT |
 | [Mumble](https://github.com/mumble-voip/mumble) protocol definitions (`Mumble.proto`, `MumbleUDP.proto`, excerpts) | Mumble protocol | BSD-3-Clause |
-| [Avalonia](https://github.com/AvaloniaUI/Avalonia) (Avalonia, Avalonia.Desktop, Themes.Fluent, Fonts.Inter) | cross-platform user interface | MIT |
-| [Inter](https://github.com/rsms/inter) font (Avalonia.Fonts.Inter) | user interface font | SIL Open Font License 1.1 |
-| [SkiaSharp](https://github.com/mono/SkiaSharp) | image decoding, scaling and encoding | MIT |
-| [PortAudio](https://github.com/PortAudio/portaudio) and [PortAudioSharp2](https://github.com/k2-fsa/PortAudioSharp2) | audio input and output on macOS and Linux | MIT |
-| [SharpHook](https://github.com/TolikPylypchuk/SharpHook) and [libuiohook](https://github.com/kwhat/libuiohook) | system-wide push-to-talk key (**libuiohook is LGPL-3.0: check the terms before a release, see todo.json**) | MIT / LGPL-3.0 |
-| [Material Icons](https://github.com/google/material-design-icons) font | icons (`Owble/Assets/Fonts/MaterialIcons-Regular.ttf`) | Apache License 2.0 |
+| [Avalonia](https://github.com/AvaloniaUI/Avalonia) (Avalonia, Avalonia.Desktop, Themes.Fluent, Fonts.Inter, Avalonia.Skia and the platform packages), MicroCom.Runtime, Tmds.DBus.Protocol | cross-platform user interface | MIT |
+| [ANGLE](https://github.com/google/angle) (`av_libglesv2.dll` from Avalonia.Angle.Windows.Natives) | graphics on Windows | BSD-3-Clause (`licenses/ANGLE-Avalonia-LICENSE.txt`) |
+| [Inter](https://github.com/rsms/inter) font (Avalonia.Fonts.Inter) | user interface font | SIL Open Font License 1.1 (`licenses/Inter-OFL-1.1.txt`) |
+| [SkiaSharp](https://github.com/mono/SkiaSharp) and [HarfBuzzSharp](https://github.com/mono/SkiaSharp) with their native libraries (they contain Skia, HarfBuzz, FreeType, libpng, zlib and others) | drawing, text, image decoding, scaling and encoding | MIT; the native parts under the licenses in `licenses/SkiaSharp-HarfBuzzSharp-THIRD-PARTY-NOTICES.txt` |
+| [PortAudio](https://github.com/PortAudio/portaudio) | audio input and output on macOS and Linux | MIT |
+| [PortAudioSharp2](https://github.com/csukuangfj/PortAudioSharp2) and the packages org.k2fsa.portaudio.runtime.* | .NET binding and builds of PortAudio | Apache License 2.0 (`licenses/Apache-2.0.txt`) |
+| [SharpHook](https://github.com/TolikPylypchuk/SharpHook) | .NET binding for the system-wide push-to-talk key | MIT |
+| [libuiohook](https://github.com/TolikPylypchuk/libuiohook) (fork used by SharpHook) | system-wide keyboard and mouse hook | **LGPL-3.0** (`licenses/LGPL-3.0.txt`, `licenses/GPL-3.0.txt`), see the section on libuiohook below |
+| [Material Icons](https://github.com/google/material-design-icons) font | icons (`Owble/Assets/Fonts/MaterialIcons-Regular.ttf`) | Apache License 2.0 (`licenses/Apache-2.0.txt`) |
 
 Build tools that do not become part of the program (Grpc.Tools, Microsoft.CodeAnalysis.ResxSourceGenerator,
-test frameworks) are used under their own licenses and are not redistributed.
+test frameworks, the Avalonia developer tools of debug builds) are used under their own licenses and are not redistributed.
 
 ---
 
@@ -39,6 +45,10 @@ Applies to the components marked "MIT" above, with these copyright notices:
 - SharpHook: Copyright (c) Tolik Pylypchuk
 - NAudio: Copyright (c) Mark Heath
 - RNNoise.NET: Copyright (c) 2023 Yellow Dog Man Studios s.r.o.
+- HarfBuzzSharp: Copyright (c) 2015-2016 Xamarin, Inc.; (c) 2017-2018 Microsoft Corporation
+- Microsoft.Extensions.*, Microsoft.IO.RecyclableMemoryStream, System.Security.Cryptography.ProtectedData: Copyright (c) Microsoft Corporation and the .NET Foundation
+- MicroCom.Runtime: Copyright (c) AvaloniaUI OÃœ and contributors
+- Tmds.DBus.Protocol: Copyright (c) Tom Deseyn and contributors
 
 The .NET runtime additionally contains components listed in its own third-party notices:
 https://github.com/dotnet/runtime/blob/main/THIRD-PARTY-NOTICES.TXT
@@ -140,3 +150,53 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
+
+---
+
+## Apache License 2.0
+
+Applies to the components marked "Apache License 2.0" above. The full text is in `licenses/Apache-2.0.txt`.
+
+- Material Icons: Copyright Google LLC
+- PortAudioSharp2 and org.k2fsa.portaudio.runtime.*: Copyright the PortAudioSharp2 authors (csukuangfj, k2-fsa), https://github.com/csukuangfj/PortAudioSharp2
+
+---
+
+## SIL Open Font License 1.1 (Inter)
+
+The user interface font Inter is licensed under the SIL Open Font License, Version 1.1. The font is
+used unchanged and is not sold on its own. The full text with the copyright notice is in
+`licenses/Inter-OFL-1.1.txt`.
+
+Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter)
+
+---
+
+## Native libraries of SkiaSharp and HarfBuzzSharp, ANGLE
+
+The native libraries `libSkiaSharp` and `libHarfBuzzSharp` contain third-party code (Skia, HarfBuzz,
+FreeType, libpng, zlib, ANGLE and others) under the licenses reproduced in
+`licenses/SkiaSharp-HarfBuzzSharp-THIRD-PARTY-NOTICES.txt` (copied unchanged from the NuGet packages).
+`av_libglesv2.dll` (ANGLE, Windows) comes from the package Avalonia.Angle.Windows.Natives; its license is
+in `licenses/ANGLE-Avalonia-LICENSE.txt`.
+
+---
+
+## libuiohook (LGPL-3.0)
+
+Owble uses the library libuiohook, through the .NET binding SharpHook (MIT), to recognise the push-to-talk
+key and mouse button while Owble is in the background.
+
+libuiohook: Copyright (C) 2006-2023 Alexander Barker and contributors. It is free software under the
+GNU Lesser General Public License, version 3 (`licenses/LGPL-3.0.txt`), which refers to the GNU General
+Public License, version 3 (`licenses/GPL-3.0.txt`). Owble comes with no warranty from the authors of libuiohook.
+
+- **Used version:** the fork https://github.com/TolikPylypchuk/libuiohook at commit
+  `3890543a1aa09f20966b1784650487093daad97e` (the version SharpHook 8.0.1 is built with). Its source code
+  is available there: https://github.com/TolikPylypchuk/libuiohook/tree/3890543a1aa09f20966b1784650487093daad97e
+- **Not linked statically:** libuiohook is a separate dynamic library next to the program
+  (`uiohook.dll` on Windows, `libuiohook.dylib` on macOS, `libuiohook*.so` on Linux). Owble loads it at
+  runtime and contains no code of it.
+- **Replacing it:** you may replace this library with your own modified build of the same interface
+  (stop Owble, replace the file in the program folder, start Owble). Nothing in the license of Owble
+  prohibits this, nor reverse engineering for debugging such modifications.
