@@ -1,4 +1,4 @@
-<!-- This page is maintained in the (private) Owble repository under .github/release-repo/README.md and copied here with every release. -->
+<!-- This page is maintained in the Owble repository under .github/release-repo/README.md and copied here with every release. -->
 <p align="center">
   <img src="owble.png" width="112" alt="Owble Logo" />
 </p>
@@ -6,7 +6,7 @@
 <h1 align="center">Owble</h1>
 
 <p align="center">
-  Ein moderner Windows-Client für <a href="https://www.mumble.info">Mumble</a>-Server.
+  Ein moderner Client für <a href="https://www.mumble.info">Mumble</a>-Server – für Windows, macOS und Linux.
 </p>
 
 <p align="center">
@@ -14,18 +14,26 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-win-x64.zip"><b>⬇ Owble für Windows herunterladen</b></a>
+  <b>⬇ Herunterladen:</b>
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-win-x64.zip">Windows</a> ·
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-osx-arm64.zip">macOS (Apple-Chip)</a> ·
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-osx-x64.zip">macOS (Intel)</a> ·
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-linux-x64.tar.gz">Linux</a>
 </p>
 
 ---
 
 ## Installation
 
-ZIP entpacken und `Owble.exe` starten – .NET ist enthalten, Voraussetzung ist Windows 10 oder 11 (64 Bit). Beim ersten Start bietet Owble an, sich für dein Windows-Konto zu installieren (ohne Adminrechte); was eingerichtet wird, wählst du selbst: Startmenü, Desktop, App-Liste, Autostart, `mumble://`-Links. Nichts ausgewählt heißt portabel.
+.NET ist jeweils enthalten, es muss nichts anderes installiert werden.
 
-Meldet Windows beim ersten Start „Der Computer wurde durch Windows geschützt“ (die Datei ist nicht signiert): *Weitere Informationen → Trotzdem ausführen*.
+**Windows 10/11 (64 Bit):** ZIP entpacken und `Owble.exe` starten. Beim ersten Start bietet Owble an, sich für dein Benutzerkonto zu installieren (ohne Adminrechte); was eingerichtet wird, wählst du selbst: Startmenü, Desktop, App-Liste, Autostart, `mumble://`-Links. Nichts ausgewählt heißt portabel. Meldet Windows „Der Computer wurde durch Windows geschützt“ (die Datei ist nicht signiert): *Weitere Informationen → Trotzdem ausführen*.
 
-**Update:** Ein installiertes Owble (ab 0.3.0) zeigt neue Versionen oben in der Titelleiste an und aktualisiert sich mit einem Klick. Sonst: neue Version herunterladen, Owble beenden, die neue `Owble.exe` starten und installieren. Einstellungen, Server und Zertifikat bleiben erhalten. **Deinstallieren** (App-Liste von Windows oder Einstellungen) entfernt Owble restlos. Die eigene Version steht unten links in den Einstellungen, alle Versionen unter [Releases](https://github.com/AntaresPURE/Owble-Releases/releases).
+**macOS 13 oder neuer:** ZIP öffnen und `Owble.app` in den Ordner *Programme* ziehen. Beim ersten Start meldet macOS, dass die App von einem nicht verifizierten Entwickler stammt: Rechtsklick auf Owble → *Öffnen* (oder *Systemeinstellungen → Datenschutz & Sicherheit → Trotzdem öffnen*). Owble fragt dann nach dem Mikrofon; für Push-to-Talk mit einer Taste außerhalb des Fensters braucht es die Freigabe unter *Eingabeüberwachung*.
+
+**Linux (64 Bit):** Archiv entpacken (`tar -xzf Owble-linux-x64.tar.gz`) und `Owble` im Ordner starten. Wie unter Windows bietet Owble an, sich zu installieren (nach `~/.local/share/Owble`, mit Eintrag im Anwendungsmenü, Autostart und `mumble://`-Links). Benötigt werden die üblichen Desktop-Bibliotheken (X11 bzw. XWayland, `libicu`, `libasound2`, `libice6`, `libsm6`, `fontconfig`), die auf Desktop-Systemen vorhanden sind.
+
+**Update:** Ein installiertes Owble (unter macOS: in *Programme*) zeigt neue Versionen oben im Fenster an und aktualisiert sich mit einem Klick. Sonst: neue Version herunterladen und wie oben starten. Einstellungen, Server und Zertifikat bleiben erhalten. **Deinstallieren** (Einstellungen, unter Windows auch die App-Liste) entfernt Owble restlos. Die eigene Version steht unten links in den Einstellungen, alle Versionen unter [Releases](https://github.com/AntaresPURE/Owble-Releases/releases).
 
 ## Lizenz
 

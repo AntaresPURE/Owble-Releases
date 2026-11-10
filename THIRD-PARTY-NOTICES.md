@@ -6,16 +6,21 @@ reproduced below as their terms require.
 
 | Component | Used for | License |
 |---|---|---|
-| .NET runtime, WPF, Windows Forms (included in the self-contained build) | application platform | MIT |
+| .NET runtime (included in the self-contained build) | application platform | MIT |
 | [CommunityToolkit.Mvvm](https://github.com/CommunityToolkit/dotnet) | MVVM infrastructure | MIT |
-| [NAudio](https://github.com/naudio/NAudio) (NAudio, NAudio.Core, NAudio.Wasapi, NAudio.WinMM, NAudio.Midi) | audio input and output | MIT |
+| [NAudio](https://github.com/naudio/NAudio) (NAudio.Core, NAudio.Wasapi) | mixing; audio input and output on Windows (WASAPI) | MIT |
 | [System.Numerics.Tensors](https://github.com/dotnet/runtime) | dependency of NAudio | MIT |
 | [Concentus](https://github.com/lostromb/concentus) (including the Opus reference library) | Opus voice codec | BSD-style (Opus license) |
 | [Google.Protobuf](https://github.com/protocolbuffers/protobuf) | protocol serialization | BSD-3-Clause |
 | [RNNoise](https://gitlab.xiph.org/xiph/rnnoise) | noise suppression | BSD-3-Clause |
 | [RNNoise.NET](https://github.com/Yellow-Dog-Man/RNNoise.Net) (YellowDogMan.RRNoise.NET) | packaging of RNNoise | MIT |
 | [Mumble](https://github.com/mumble-voip/mumble) protocol definitions (`Mumble.proto`, `MumbleUDP.proto`, excerpts) | Mumble protocol | BSD-3-Clause |
-| [Microsoft Edge WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) (Microsoft.Web.WebView2) | screen sharing window (uses the WebView2 runtime that comes with Windows) | BSD-3-Clause |
+| [Avalonia](https://github.com/AvaloniaUI/Avalonia) (Avalonia, Avalonia.Desktop, Themes.Fluent, Fonts.Inter, ReactiveUI.Avalonia) | cross-platform user interface | MIT |
+| [Inter](https://github.com/rsms/inter) font (Avalonia.Fonts.Inter) | user interface font | SIL Open Font License 1.1 |
+| [SkiaSharp](https://github.com/mono/SkiaSharp) | image decoding, scaling and encoding | MIT |
+| [PortAudio](https://github.com/PortAudio/portaudio) and [PortAudioSharp2](https://github.com/k2-fsa/PortAudioSharp2) | audio input and output on macOS and Linux | MIT |
+| [SharpHook](https://github.com/TolikPylypchuk/SharpHook) and [libuiohook](https://github.com/kwhat/libuiohook) | system-wide push-to-talk key (**libuiohook is LGPL-3.0: check the terms before a release, see todo.json**) | MIT / LGPL-3.0 |
+| [Material Icons](https://github.com/google/material-design-icons) font | icons (`Owble/Assets/Fonts/MaterialIcons-Regular.ttf`) | Apache License 2.0 |
 
 Build tools that do not become part of the program (Grpc.Tools, Microsoft.CodeAnalysis.ResxSourceGenerator,
 test frameworks) are used under their own licenses and are not redistributed.
@@ -28,6 +33,10 @@ Applies to the components marked "MIT" above, with these copyright notices:
 
 - .NET runtime, WPF, Windows Forms, System.Numerics.Tensors: Copyright (c) .NET Foundation and Contributors
 - CommunityToolkit.Mvvm: Copyright (c) .NET Foundation and Contributors
+- Avalonia, ReactiveUI.Avalonia: Copyright (c) AvaloniaUI OÜ and contributors / ReactiveUI Association Incorporated
+- SkiaSharp: Copyright (c) 2015-2016 Xamarin, Inc.; (c) 2017-2018 Microsoft Corporation
+- PortAudio: Copyright (c) 1999-2011 Ross Bencina and Phil Burk
+- SharpHook: Copyright (c) Tolik Pylypchuk
 - NAudio: Copyright (c) Mark Heath
 - RNNoise.NET: Copyright (c) 2023 Yellow Dog Man Studios s.r.o.
 
@@ -64,7 +73,6 @@ Applies to the components marked "BSD-3-Clause" above, with these copyright noti
 - RNNoise: Copyright (c) 2017, Mozilla; Copyright (c) 2007-2017, Jean-Marc Valin;
   Copyright (c) 2005-2017, Xiph.Org Foundation; Copyright (c) 2003-2004, Mark Borgerding
 - Mumble protocol definitions: Copyright (C) The Mumble Developers
-- Microsoft Edge WebView2 SDK: Copyright (C) Microsoft Corporation. All rights reserved.
 
 ```
 Redistribution and use in source and binary forms, with or without
