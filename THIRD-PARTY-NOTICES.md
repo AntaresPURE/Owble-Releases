@@ -47,7 +47,7 @@ Applies to the components marked "MIT" above, with these copyright notices:
 - RNNoise.NET: Copyright (c) 2023 Yellow Dog Man Studios s.r.o.
 - HarfBuzzSharp: Copyright (c) 2015-2016 Xamarin, Inc.; (c) 2017-2018 Microsoft Corporation
 - Microsoft.Extensions.*, Microsoft.IO.RecyclableMemoryStream, System.Security.Cryptography.ProtectedData: Copyright (c) Microsoft Corporation and the .NET Foundation
-- MicroCom.Runtime: Copyright (c) AvaloniaUI OÃœ and contributors
+- MicroCom.Runtime: Copyright (c) AvaloniaUI OÜ and contributors
 - Tmds.DBus.Protocol: Copyright (c) Tom Deseyn and contributors
 
 The .NET runtime additionally contains components listed in its own third-party notices:
