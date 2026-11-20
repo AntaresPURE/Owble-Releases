@@ -6,7 +6,7 @@
 <h1 align="center">Owble</h1>
 
 <p align="center">
-  Ein moderner Client für <a href="https://www.mumble.info">Mumble</a>-Server – für Windows, macOS und Linux.
+  Ein moderner Client für <a href="https://www.mumble.info">Mumble</a>-Server – für Windows, macOS, Linux und Android.
 </p>
 
 <p align="center">
@@ -15,10 +15,19 @@
 
 <p align="center">
   <b>⬇ Herunterladen:</b>
-  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-win-x64.zip">Windows</a> ·
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-win-x64.zip">Windows</a>
+  <!-- PAUSED (only Windows is released for now; see .github/workflows/build.yml). Resume with:
+  ·
   <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-osx-arm64.zip">macOS (Apple-Chip)</a> ·
   <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-osx-x64.zip">macOS (Intel)</a> ·
-  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-linux-x64.tar.gz">Linux</a>
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-linux-x64.tar.gz">Linux</a> ·
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-android-arm64.apk">Android</a>
+  -->
+</p>
+
+<p align="center">
+  macOS, Linux und Android sind vorübergehend pausiert – die letzten Versionen dafür gibt es unter
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases">Releases</a>.
 </p>
 
 ---
@@ -33,7 +42,9 @@
 
 **Linux (64 Bit):** Archiv entpacken (`tar -xzf Owble-linux-x64.tar.gz`) und `Owble` im Ordner starten. Wie unter Windows bietet Owble an, sich zu installieren (nach `~/.local/share/Owble`, mit Eintrag im Anwendungsmenü, Autostart und `mumble://`-Links). Benötigt werden die üblichen Desktop-Bibliotheken (X11 bzw. XWayland, `libicu`, `libasound2`, `libice6`, `libsm6`, `fontconfig`), die auf Desktop-Systemen vorhanden sind.
 
-**Update:** Ein installiertes Owble (unter macOS: in *Programme*) zeigt neue Versionen oben im Fenster an und aktualisiert sich mit einem Klick. Sonst: neue Version herunterladen und wie oben starten. Einstellungen, Server und Zertifikat bleiben erhalten. **Deinstallieren** (Einstellungen, unter Windows auch die App-Liste) entfernt Owble restlos. Die eigene Version steht unten links in den Einstellungen, alle Versionen unter [Releases](https://github.com/AntaresPURE/Owble-Releases/releases).
+**Android 8 oder neuer (64 Bit):** `Owble-android-arm64.apk` auf dem Handy herunterladen und antippen; Android fragt einmal, ob der Browser bzw. die Dateien-App Apps installieren darf. Auf Samsung-Geräten blockiert die *Automatische Sperre* (*Einstellungen → Sicherheit und Datenschutz*) jede Installation außerhalb der App-Stores: dafür kurz ausschalten. Owble fragt nach Mikrofon und Benachrichtigungen; solange du verbunden bist, zeigt eine Benachrichtigung das an, damit die Sprache auch bei ausgeschaltetem Bildschirm weiterläuft. Bildschirmübertragung gibt es auf Android nicht. Wer eine Testversion vor 1.5.0 installiert hat, muss sie einmal deinstallieren (andere Signatur).
+
+**Update:** Ein installiertes Owble (unter macOS: in *Programme*) zeigt neue Versionen oben im Fenster an (Android: über der Serverliste; Android fragt vor dem Installieren nach) und aktualisiert sich mit einem Klick. Sonst: neue Version herunterladen und wie oben starten. Einstellungen, Server und Zertifikat bleiben erhalten. **Deinstallieren** (Einstellungen, unter Windows auch die App-Liste) entfernt Owble restlos. Die eigene Version steht unten links in den Einstellungen, alle Versionen unter [Releases](https://github.com/AntaresPURE/Owble-Releases/releases).
 
 ## Lizenz
 
