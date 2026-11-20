@@ -15,18 +15,18 @@
 
 <p align="center">
   <b>⬇ Herunterladen:</b>
-  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-win-x64.zip">Windows</a>
-  <!-- PAUSED (only Windows is released for now; see .github/workflows/build.yml). Resume with:
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-win-x64.zip">Windows</a> ·
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-android-arm64.apk">Android</a>
+  <!-- PAUSED (only Windows and Android are released for now; see .github/workflows/build.yml). Resume with:
   ·
   <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-osx-arm64.zip">macOS (Apple-Chip)</a> ·
   <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-osx-x64.zip">macOS (Intel)</a> ·
-  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-linux-x64.tar.gz">Linux</a> ·
-  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-android-arm64.apk">Android</a>
+  <a href="https://github.com/AntaresPURE/Owble-Releases/releases/latest/download/Owble-linux-x64.tar.gz">Linux</a>
   -->
 </p>
 
 <p align="center">
-  macOS, Linux und Android sind vorübergehend pausiert – die letzten Versionen dafür gibt es unter
+  macOS und Linux sind vorübergehend pausiert – die letzten Versionen dafür gibt es unter
   <a href="https://github.com/AntaresPURE/Owble-Releases/releases">Releases</a>.
 </p>
 
